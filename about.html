@@ -59,9 +59,17 @@
   .lk-kr { font-family: "Noto Ko Black", sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 2px; color: #1e1f28; }
   .lk-en { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 8px; letter-spacing: 3px; color: #0e5bd8; }
   .ci-lockrow.v .lk-txt { text-align: center; }
-  /* 연혁: 연도 탭 없이 전체 항목을 한 번에 표시 */
-  #KBPFwrap.intro .section_2 .tab_history.history_all { display: block; max-width: 640px; margin: 40px auto 0; }
-  #KBPFwrap.intro .section_2 .tab_history.history_all .tab_container { margin-top: 0; width: 100%; }
+  /* 연혁 타임라인: 연도 라벨(둥근 알약형) + 선 위 동그라미, 탭 없이 전체 표시 */
+  #KBPFwrap.intro .section_2 .history_line { max-width: 520px; margin: 56px auto 0; }
+  #KBPFwrap.intro .section_2 .history_line ul { position: relative; list-style: none; padding: 0; margin: 0; }
+  #KBPFwrap.intro .section_2 .history_line ul:before { content: ""; position: absolute; top: 29px; bottom: -14px; left: 150px; width: 2px; background: #4a4c5a; }
+  #KBPFwrap.intro .section_2 .history_line li { position: relative; display: flex; align-items: center; margin-bottom: 48px; }
+  #KBPFwrap.intro .section_2 .history_line li:last-child { margin-bottom: 0; }
+  #KBPFwrap.intro .section_2 .history_line li:before { content: ""; position: absolute; left: 143px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; border: 4px solid #fff; background: #1e1f28; box-sizing: content-box; z-index: 2; }
+  #KBPFwrap.intro .section_2 .history_line .hl-year { flex: 0 0 104px; height: 50px; line-height: 46px; text-align: center; font-family: "Noto Ko Black", sans-serif; font-size: 18px; color: #fff; border: solid 2px #fff; border-radius: 33px; background-color: #1e1f28; box-sizing: border-box; }
+  #KBPFwrap.intro .section_2 .history_line .hl-body { flex: 1; padding-left: 92px; }
+  #KBPFwrap.intro .section_2 .history_line .hl-date { color: #8c8e9b; font-family: "Noto Ko Bold", sans-serif; font-size: 18px; line-height: 1.44; }
+  #KBPFwrap.intro .section_2 .history_line .hl-desc { color: #fff; font-family: "Noto Ko Bold", sans-serif; font-size: 18px; line-height: 1.44; margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -126,17 +134,21 @@
   <section class="section_2" id="section_2">
     <div class="inner">
       <h2 class="tit">한국AIB성장포럼이 걸어온 길</h2>
-      <div class="tab_history history_all">
-        <ul class="tab_container">
-          <li class="tab_content show">
-            <dl>
-              <dt>2022.02.10</dt>
-              <dd>한국 블록체인정책 포럼 설립</dd>
-            </dl>
-            <dl>
-              <dt>2026.07.10</dt>
-              <dd>한국AIB성장포럼으로 개편</dd>
-            </dl>
+      <div class="history_line">
+        <ul>
+          <li>
+            <span class="hl-year">2022</span>
+            <div class="hl-body">
+              <div class="hl-date">2022.02.10</div>
+              <div class="hl-desc">한국 블록체인정책 포럼 설립</div>
+            </div>
+          </li>
+          <li>
+            <span class="hl-year">2026</span>
+            <div class="hl-body">
+              <div class="hl-date">2026.07.10</div>
+              <div class="hl-desc">한국AIB성장포럼으로 개편</div>
+            </div>
           </li>
         </ul>
       </div>
