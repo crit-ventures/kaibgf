@@ -59,6 +59,9 @@
   .lk-kr { font-family: "Noto Ko Black", sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 2px; color: #1e1f28; }
   .lk-en { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 8px; letter-spacing: 3px; color: #0e5bd8; }
   .ci-lockrow.v .lk-txt { text-align: center; }
+  /* 연혁: 연도 탭 없이 전체 항목을 한 번에 표시 */
+  #KBPFwrap.intro .section_2 .tab_history.history_all { display: block; max-width: 640px; margin: 40px auto 0; }
+  #KBPFwrap.intro .section_2 .tab_history.history_all .tab_container { margin-top: 0; width: 100%; }
 </style>
 </head>
 <body>
@@ -123,19 +126,13 @@
   <section class="section_2" id="section_2">
     <div class="inner">
       <h2 class="tit">한국AIB성장포럼이 걸어온 길</h2>
-      <div class="tab_history">
-        <ul class="tab_menu">
-          <li class="active" rel="tab_1">2022</li>
-          <li rel="tab_2">2026</li>
-        </ul>
+      <div class="tab_history history_all">
         <ul class="tab_container">
-          <li id="tab_1" class="tab_content show">
+          <li class="tab_content show">
             <dl>
               <dt>2022.02.10</dt>
               <dd>한국 블록체인정책 포럼 설립</dd>
             </dl>
-          </li>
-          <li id="tab_2" class="tab_content">
             <dl>
               <dt>2026.07.10</dt>
               <dd>한국AIB성장포럼으로 개편</dd>
