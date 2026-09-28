@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>포럼 소개 | KAIBGF</title>
+<!-- ⚠️ 소셜 공유 메타데이터 · og:url/og:image는 예정 도메인(kaibgf.kr) 기준 절대경로 → 실제 배포 주소가 바뀌면 kaibgf.kr URL을 수정해야 함 -->
+<meta name="description" content="대한민국 AI·블록체인 산업의 미래를 이끕니다.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="한국AIB성장포럼 (KAIBGF)">
+<meta property="og:title" content="한국AIB성장포럼 (KAIBGF)">
+<meta property="og:description" content="대한민국 AI·블록체인 산업의 미래를 이끕니다.">
+<meta property="og:url" content="https://kaibgf.kr/about.html">
+<meta property="og:image" content="https://kaibgf.kr/assets/img/site/og_kaibgf.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="한국AIB성장포럼 (KAIBGF)">
+<meta name="twitter:description" content="대한민국 AI·블록체인 산업의 미래를 이끕니다.">
+<meta name="twitter:image" content="https://kaibgf.kr/assets/img/site/og_kaibgf.jpg">
+<link rel="stylesheet" href="assets/vendor/font_notosans.css">
+<link rel="stylesheet" href="assets/vendor/style.min.css">
+<style>
+  /* 좌우 정렬 락업 텍스트 (기본 = 밝은 배경용 어두운 글자) */
+  .lock-ko { font-family: "Noto Ko Black", sans-serif; font-weight: 800; font-size: 20px; fill: #1e1f28; }
+  .lock-en { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 10px; fill: #0e5bd8; }
+  /* 헤더 로고: 마크 + 국·영문 좌우정렬 락업 (흰 글자, 크게) */
+  #KBPFwrap .KBPFheader h1 { padding: 0; height: 70px; display: inline-flex; align-items: center; }
+  #KBPFwrap .KBPFheader h1 a { width: auto; height: auto; background: none; display: inline-block; }
+  #KBPFwrap .KBPFheader h1 a .hlock { height: 58px; width: auto; display: block; overflow: visible; }
+  #KBPFwrap .KBPFheader h1 a .hlock .lock-ko { fill: #fff; }
+  #KBPFwrap .KBPFheader h1 a .hlock .lock-en { fill: rgba(255,255,255,.78); }
+  /* 푸터 로고: KAIBGF 마크로 교체 */
+  #KBPFwrap .footer .f_logo a { width: auto; height: auto; background: none; display: inline-block; }
+  #KBPFwrap .footer .f_logo a .flock { height: 46px; width: auto; display: block; overflow: visible; }
+  #KBPFwrap .footer .f_logo a .flock .lock-ko { fill: #fff; }
+  #KBPFwrap .footer .f_logo a .flock .lock-en { fill: rgba(255,255,255,.78); }
+  /* CI 마크 공통 */
+  svg text { font-family: "Montserrat", "Noto Ko Black", sans-serif; font-weight: 800; }
+  /* 제목류 볼드 처리 */
+  #KBPFwrap .tit_set .tit,
+  #KBPFwrap .section_2 .tit,
+  #KBPFwrap .section_3 .tit,
+  #KBPFwrap .ci_tit { font-weight: 800; }
+  /* CI 흰 박스 안 콘텐츠 배치 */
+  #KBPFwrap.intro .section_3 .list_logo .design,
+  #KBPFwrap.intro .section_3 .list_logo .logo_1,
+  #KBPFwrap.intro .section_3 .list_logo .logo_2 {
+    background-image: none; padding: 46px 24px; min-height: 0; flex-direction: column; gap: 18px;
+  }
+  .ci-formula { display: flex; align-items: center; justify-content: center; gap: 22px; flex-wrap: wrap; }
+  .ci-formula .op { font-size: 26px; color: #b7c0d0; font-weight: 300; }
+  .ci-formula .el { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 108px; }
+  .ci-formula .el .name { font-size: 12px; color: #717593; }
+  .ci-lockrow { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  .ci-lockrow.v { flex-direction: column; gap: 14px; }
+  .lk-kr { font-family: "Noto Ko Black", sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 2px; color: #1e1f28; }
+  .lk-en { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 8px; letter-spacing: 3px; color: #0e5bd8; }
+  .ci-lockrow.v .lk-txt { text-align: center; }
+</style>
+</head>
+<body>
+
+<!-- KAIBGF 로고 마크 정의(공용) — assets/vendor/kaibgf_logo.js 한 곳에서 관리 -->
+<script src="assets/vendor/kaibgf_logo.js"></script>
+
+<div class="KBPFwrap intro" id="KBPFwrap">
+  <header class="KBPFheader">
+    <div class="header_wrap">
+      <h1><a href="index.html">
+        <svg class="hlock" viewBox="0 -12 380 122"><use href="#markInner"/>
+          <text class="lock-ko" x="0" y="100" textLength="378" lengthAdjust="spacing">한국AIB성장포럼</text>
+          <text class="lock-en" x="0" y="118" textLength="378" lengthAdjust="spacing">KOREA AI &amp; BLOCKCHAIN GROWTH FORUM</text>
+        </svg>
+      </a></h1>
+      <ul class="gnb">
+        <li><a href="index.html" title="홈으로 이동">홈</a></li>
+        <li>
+          <a href="about.html" title="포럼 소개" class="m_event active">포럼 소개</a>
+          <ul class="depth" style="display:none">
+            <li><a href="about.html" class="active">KAIBGF 소개</a></li>
+            <li><a href="articles.html">포럼 정관</a></li>
+            <li><a href="people.html">함께하는 사람들</a></li>
+          </ul>
+        </li>
+        <li><a href="business.html" title="주요 사업">주요 사업</a></li>
+        <li>
+          <a href="contact.html" title="CONTACT" class="m_event">CONTACT</a>
+          <ul class="depth" style="display:none">
+            <li><a href="join.html">가입 안내</a></li>
+            <li><a href="contact.html">오시는 길</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button type="button" class="m_menu"><span class="hide">Menu</span></button>
+    </div>
+  </header>
+
+  <section class="section_1" id="section_1">
+    <div class="bg_video">
+      <video loop muted playsinline autoplay poster="assets/img/vendor/sub_intro_bg_1.jpg"><source src="assets/vendor/intro.mp4" type="video/mp4"></video>
+    </div>
+    <div class="tit_set">
+      <div class="inner">
+        <h2 class="tit">한국AIB성장포럼은</h2>
+        <p class="txt">
+          대한민국의 AI·블록체인 기술과 블록체인 기반 디지털자산을 위해 설립된 조직으로,
+          AI의 신뢰성·안전성과 블록체인 거래의 안정성 확보, 사회적 인식 개선 및 글로벌 경쟁력 강화를 통해
+          산업 발전에 기여함을 목적으로 합니다.
+        </p>
+        <p class="txt">
+          이를 위해 AI·블록체인 관련 기술과 제도를 연구하고, 시장을 분석해 맞춤형 정책을 수립·제언하며,
+          관련 기업·학계·금융기관과의 교류와 상호 협력을 통해 대한민국 AI·블록체인 산업의 지속가능한 성장을
+          도모하고자 합니다.
+        </p>
+      </div>
+    </div>
+    <div class="scroll_down"></div>
+  </section>
+
+  <section class="section_2" id="section_2">
+    <div class="inner">
+      <h2 class="tit">한국AIB성장포럼이 걸어온 길</h2>
+      <div class="tab_history">
+        <ul class="tab_menu">
+          <li class="active" rel="tab_1">2022</li>
+          <li rel="tab_2">2026</li>
+        </ul>
+        <ul class="tab_container">
+          <li id="tab_1" class="tab_content show">
+            <dl>
+              <dt>2022.02.10</dt>
+              <dd>한국 블록체인정책 포럼 설립</dd>
+            </dl>
+          </li>
+          <li id="tab_2" class="tab_content">
+            <dl>
+              <dt>2026.07.10</dt>
+              <dd>한국AIB성장포럼으로 개편</dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_3" id="section_3">
+    <div class="inner">
+      <h2 class="tit">CI 소개</h2>
+      <div class="cont_1">
+        <dl class="s_txt">
+          <dt class="ci_tit">로고 디자인</dt>
+          <dd class="ci_txt">
+            <div class="txt">KAIBGF(한국AIB성장포럼)의 로고는 Block을 레고(LEGO)에, Chain을 서로 연결된 블록으로 형상화하고, AI를 이를 구동하는 칩(chip)으로 더해 AI와 블록체인의 결합을 은유적으로 표현하였습니다.</div>
+            <ul class="list_logo">
+              <li class="design">
+                <div class="ci-formula">
+                  <div class="el"><img src="assets/img/site/ci_block.png" alt="BLOCK" style="height:56px;width:auto"><span class="name">BLOCK · 레고</span></div>
+                  <span class="op">+</span>
+                  <div class="el"><img src="assets/img/site/ci_chain.png" alt="CHAIN" style="height:56px;width:auto"><span class="name">CHAIN · 연결</span></div>
+                  <span class="op">+</span>
+                  <div class="el">
+                    <svg width="80" height="64" viewBox="0 0 84 68">
+                      <g fill="#9aa3b4">
+                        <rect x="30" y="10" width="6" height="10" rx="2"/><rect x="39" y="10" width="6" height="10" rx="2"/><rect x="48" y="10" width="6" height="10" rx="2"/>
+                        <rect x="30" y="48" width="6" height="10" rx="2"/><rect x="39" y="48" width="6" height="10" rx="2"/><rect x="48" y="48" width="6" height="10" rx="2"/>
+                        <rect x="22" y="18" width="40" height="32" rx="7"/>
+                      </g>
+                      <circle cx="30" cy="26" r="2.6" fill="#fff"/>
+                    </svg>
+                    <span class="name">AI · 칩</span>
+                  </div>
+                  <span class="op">→</span>
+                  <svg viewBox="0 -6 380 94" style="width:200px;overflow:visible"><use href="#markInner"/></svg>
+                </div>
+              </li>
+              <li class="logo_1">
+                <svg class="cilock" viewBox="0 -1 380 124" style="width:330px;overflow:visible"><use href="#markInner"/>
+                  <text class="lock-ko" x="0" y="100" textLength="378" lengthAdjust="spacing">한국AIB성장포럼</text>
+                  <text class="lock-en" x="0" y="118" textLength="378" lengthAdjust="spacing">KOREA AI &amp; BLOCKCHAIN GROWTH FORUM</text>
+                </svg>
+              </li>
+              <li class="logo_2">
+                <div class="ci-lockrow h">
+                  <svg viewBox="0 -6 380 94" style="width:180px;overflow:visible"><use href="#markInner"/></svg>
+                  <div class="lk-txt"><div class="lk-kr">한국AIB성장포럼</div><div class="lk-en">KOREA AI &amp; BLOCKCHAIN<br>GROWTH FORUM</div></div>
+                </div>
+              </li>
+            </ul>
+            <a href="assets/CI/KAIBGF_CI.zip" class="btn_ci" download>CI 다운로드</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="cont_2">
+        <dl class="s_txt">
+          <dt class="ci_tit">브랜드 컬러</dt>
+          <dd class="ci_txt">
+            <div class="txt">KAIBGF(한국AIB성장포럼)의 메인 컬러는 AI·블록체인 기술의 성장을 상징합니다. 동시에 산업이라는 트렌드가 아닌 거스를 수 없는 거대한 물결, 흐름을 의미합니다.<br> 서브 컬러는 이성적, 이론적, 계획, 분석 등을 의미하는 네이비 컬러로 신뢰와 포럼을 상징합니다.</div>
+            <ul class="list_color">
+              <li class="box_1">
+                <strong class="color">Main Color</strong>
+                <dl class="list_style">
+                  <dt>RGB</dt><dd>14 91 216</dd>
+                  <dt>CMYK</dt><dd>87 64 0 0</dd>
+                  <dt>HEX</dt><dd>#0E5BD8</dd>
+                  <dt>PANTONE</dt><dd>2728 C</dd>
+                </dl>
+              </li>
+              <li class="box_2">
+                <strong class="color">Sub Color</strong>
+                <dl class="list_style">
+                  <dt>RGB</dt><dd>20 27 77</dd>
+                  <dt>CMYK</dt><dd>100 100 57 25</dd>
+                  <dt>HEX</dt><dd>#141b4d</dd>
+                  <dt>PANTONE</dt><dd>2766 C</dd>
+                </dl>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="f_logo"><a href="index.html">
+      <svg class="flock" viewBox="0 -12 380 122"><use href="#markInner"/>
+        <text class="lock-ko" x="0" y="100" textLength="378" lengthAdjust="spacing">한국AIB성장포럼</text>
+        <text class="lock-en" x="0" y="118" textLength="378" lengthAdjust="spacing">KOREA AI &amp; BLOCKCHAIN GROWTH FORUM</text>
+      </svg>
+      <span class="hide">KAIBGF 한국AIB성장포럼</span>
+    </a></div>
+    <div class="add">
+      <span>경기도 고양시 일산동구 중앙로 1193, 632호</span>
+      <a href="tel:02-6000-0088">02-6000-0088</a>
+      <a href="mailto:info@kbpf.kr">info@kbpf.kr</a>
+    </div>
+    <div class="copy">© KOREA AI &amp; BLOCKCHAIN GROWTH FORUM.</div>
+  </footer>
+</div>
+
+<script src="assets/vendor/jquery.min.js"></script>
+<script src="assets/vendor/kbpf_main.js"></script>
+<script src="assets/vendor/intro.js"></script>
+</body>
+</html>

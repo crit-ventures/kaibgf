@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+
+/* KAIBGF - 로컬 폰트 (중국 CDN 의존 제거, woff2) */
+@font-face{
+font-family:'Noto Ko Light';
+src:url('../fonts/NotoSansKR-Light.woff2') format('woff2');
+font-display:swap;
+}
+@font-face{
+font-family:'Noto Ko Regular';
+src:url('../fonts/NotoSansKR-Regular.woff2') format('woff2');
+font-display:swap;
+}
+@font-face{
+font-family:'Noto Ko Medium';
+src:url('../fonts/NotoSansKR-Medium.woff2') format('woff2');
+font-display:swap;
+}
+@font-face{
+font-family:'Noto Ko Bold';
+src:url('../fonts/NotoSansKR-Bold.woff2') format('woff2');
+font-display:swap;
+}
+@font-face{
+font-family:'Noto Ko Black';
+src:url('../fonts/NotoSansKR-Black.woff2') format('woff2');
+font-display:swap;
+}
+@font-face{
+font-family:'Noto En Regular';
+src:url('../fonts/NotoSans-Regular.woff2') format('woff2');
+font-display:swap;
+}
+@font-face{
+font-family:'Noto En Bold';
+src:url('../fonts/NotoSans-Bold.woff2') format('woff2');
+font-display:swap;
+}
+
+/* Montserrat - 로고(K A I B P F 이니셜 + 영문 락업)용, 로컬 woff2 */
+@font-face{
+font-family:'Montserrat';
+font-weight:600;
+src:url('../fonts/Montserrat-600.woff2') format('woff2');
+font-display:swap;
+}
+@font-face{
+font-family:'Montserrat';
+font-weight:700;
+src:url('../fonts/Montserrat-700.woff2') format('woff2');
+font-display:swap;
+}
+@font-face{
+font-family:'Montserrat';
+font-weight:800;
+src:url('../fonts/Montserrat-800.woff2') format('woff2');
+font-display:swap;
+}
