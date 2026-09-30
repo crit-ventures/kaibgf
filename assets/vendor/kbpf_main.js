@@ -1,3 +1,13 @@
+// 폴더 주소(about/)는 서버에선 about/index.html을 보여주지만
+// 내 컴퓨터에서 파일로 열 때(file://)는 폴더 목록이 뜨므로 링크에 index.html을 붙여준다
+if (location.protocol === "file:") {
+    $("a[href]").each(function(){
+        var h = $(this).attr("href");
+        if (/^(?:[a-z][a-z0-9+.-]*:|#|\/\/)/i.test(h)) return;
+        $(this).attr("href", h.replace(/\/(#.*)?$/, "/index.html$1"));
+    });
+}
+
 // gnb 메뉴
 // 메뉴 링크에 마우스 진입 시
 $(".gnb > li").on("mouseenter", function(){
